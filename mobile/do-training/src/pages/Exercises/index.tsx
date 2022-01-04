@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native'
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootParamsList } from '../../rootParamsListRoutes/ListRoutes';  
+
 import { 
     Container, 
+    Content,
     ContainerExercises, 
     ContentTraining, 
     Training,
@@ -8,7 +13,9 @@ import {
     ImgBackgroundTrainingA,
     ImgBackgroundTrainingB,
     ImgBackgroundTrainingC,
-    ImgBackgroundTrainingD
+    ImgBackgroundTrainingD,
+    SetUpWorkout,
+    ButtonConfig
 } from './styleComponents';
 
 import chest from '../../assets/img/chest.jpg';
@@ -18,8 +25,13 @@ import shoulder from '../../assets/img/shoulder.jpg';
 
 export default function Exercises() {
 
+    type ReciveScreens = StackNavigationProp<RootParamsList, 'Training'>
+
+    const navigation = useNavigation<ReciveScreens>();
+
     return (
         <Container>
+            <Content>
                 <ContainerExercises>
                     <ContentTraining>
                         <Training>
@@ -49,9 +61,25 @@ export default function Exercises() {
                                 {/* <Text> Treino D (Ombro completo)</Text> */}
                             </ImgBackgroundTrainingD>
                         </Training>
-
                     </ContentTraining>
                 </ContainerExercises>
+
+                <SetUpWorkout>
+                    <ButtonConfig onPress={() => navigation.navigate('Training')}>
+                        <Text>Montar treinos A</Text>
+                    </ButtonConfig>
+                    <ButtonConfig>
+                        <Text>Montar treinos B</Text>
+                    </ButtonConfig>
+                    <ButtonConfig>
+                        <Text>Montar treinos C</Text>
+                    </ButtonConfig>
+                    <ButtonConfig>
+                        <Text>Montar treinos D</Text>
+                    </ButtonConfig>
+                </SetUpWorkout>
+                
+            </Content>
         </Container>
     );
 }

@@ -36,10 +36,10 @@ export default function Home() {
                         <Exercises>
                             <ImgBackgroundExercises source={workout} imageStyle={{ borderRadius: 10}}>
                                 <LinearGradient
-                                    style={{height: 100, justifyContent: 'center'}}
+                                    style={{height: 100, justifyContent: 'center', borderRadius: 10}}
                                     start={{ x: 0, y: 0 }} end={{ x: 0.5, y: 1 }}
                                     colors={['rgba(0,0,0,1)', 'rgba(0,0,0,0.1)']}>
-                                        <Text>Exercicios</Text>
+                                        <Text>Exercícios</Text>
                                 </LinearGradient>
                             </ImgBackgroundExercises>
                         </Exercises>
@@ -49,7 +49,7 @@ export default function Home() {
                         <Calculator>
                             <ImgBackgroundCalculator source={calculator} imageStyle={{ borderRadius: 10}}>
                                 <LinearGradient
-                                    style={{height: 100, justifyContent: 'center'}}
+                                    style={{height: 100, justifyContent: 'center', borderRadius: 10}}
                                     start={{ x: 0, y: 0 }} end={{ x: 0.5, y: 1 }}
                                     colors={['rgba(0,0,0,1)', 'rgba(0,0,0,0.1)']}>
                                     <Text>Calculadora</Text>

@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  background: #000;
+  background: #f3f3f3;
 `;
 
 export const Context = styled.ScrollView`
@@ -19,7 +19,6 @@ export const Button = styled.TouchableOpacity`
 export const Exercises = styled.View`
   width: 350px;
   height: 100px;
-  background: #ccc;
   margin: 10px 0px;
   border-radius: 10px;
 `;
@@ -41,7 +40,6 @@ export const ImgBackgroundCalculator = styled.ImageBackground`
 export const Calculator = styled.View`
   width: 350px;
   height: 100px;
-  background: #ccc;
   margin: 10px 0px;
   border-radius: 10px;
   align-items: center;
