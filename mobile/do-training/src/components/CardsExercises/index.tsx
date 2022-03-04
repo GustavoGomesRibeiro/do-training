@@ -2,8 +2,11 @@ import React from 'react';
 import { 
     Container, 
     Content,
+    Header,
+    Description,
     Exercises,
     Card,
+    CardExercises,
     Text,
     Label,
     ContainerLabel
@@ -14,40 +17,43 @@ export default function CardsExercises() {
         {
             id: String(Math.random()),
             img: "importar e colocar img aqui",
-            label: "nome do exercicio aqui"
+            label: "exercicio"
         },
         {
             id: String(Math.random()),
             img: "importar e colocar img aqui",
-            label: "nome do exercicio aqui"
+            label: "exercicio"
         },
         {
             id: String(Math.random()),
             img: "importar e colocar img aqui",
-            label: "nome do exercicio aqui"
+            label: "exercicio"
         },
         {
             id: String(Math.random()),
             img: "importar e colocar img aqui",
-            label: "nome do exercicio aqui"
+            label: "exercicio"
         }
     ]
 
     return(
         <Container>
             <Content>
+                <Header>
+                    <Description>Selecione os exercícios que deseja adicionar ao treino A.</Description>
+                </Header>
                 <Card>
                     { items.map((item) => {
                         return (
-                            <>
-                                <Exercises key={item.id}>
+                            <CardExercises key={item.id}>
+                                <Exercises>
                                     <Text> {item.img} </Text>
-                                    
-                                    <ContainerLabel> 
-                                        <Label> {item.label} </Label> 
-                                    </ContainerLabel>
                                 </Exercises>
-                            </>
+
+                                <ContainerLabel> 
+                                    <Label> {item.label} </Label> 
+                                </ContainerLabel>
+                            </CardExercises>
                         )
                         })
                     }

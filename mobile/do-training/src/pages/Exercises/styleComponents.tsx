@@ -21,7 +21,7 @@ export const ContentTraining = styled.View`
     flex-direction: row;
 `;
 
-export const Training = styled.View`
+export const Training = styled.TouchableOpacity`
     justify-content: center;
     align-items: center;
     width: 100px;

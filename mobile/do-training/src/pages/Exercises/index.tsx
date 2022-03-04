@@ -66,16 +66,16 @@ export default function Exercises() {
 
                 <SetUpWorkout>
                     <ButtonConfig onPress={() => navigation.navigate('Training')}>
-                        <Text>Montar treinos A</Text>
+                        <Text>Montar seu treino A</Text>
                     </ButtonConfig>
                     <ButtonConfig>
-                        <Text>Montar treinos B</Text>
+                        <Text>Montar seu treino B</Text>
                     </ButtonConfig>
                     <ButtonConfig>
-                        <Text>Montar treinos C</Text>
+                        <Text>Montar seu treino C</Text>
                     </ButtonConfig>
                     <ButtonConfig>
-                        <Text>Montar treinos D</Text>
+                        <Text>Montar seu treino D</Text>
                     </ButtonConfig>
                 </SetUpWorkout>
                 

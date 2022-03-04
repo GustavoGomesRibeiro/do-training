@@ -3,13 +3,12 @@ import CardsExercises from '../../../components/CardsExercises/index';
 
 import {
     Container,
-    Text
+    // Text
 } from './styleComponents';
 
 export default function Training () {
     return(
         <Container>
-            <Text>Treino</Text>
             <CardsExercises/>
         </Container>
     )
